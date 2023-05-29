@@ -26,7 +26,7 @@ public class DatabaseConnector {
                 connection = DriverManager.getConnection(URL, USER, PASSWORD);
             }
         } catch (SQLException e) {
-            throw new RuntimeException("Không thể kết nối đến cơ sở dữ liệu", e);
+            throw new RuntimeException("Failed to get connection", e);
         }
         return connection;
     }
